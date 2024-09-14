@@ -41,34 +41,34 @@ function App() {
         </div>
 
         <div className="flex mt-24 justify-center text-2xl text-gray-300">Best Price To Trade</div>
-        <div className="flex w-full h-30">
-          <div className="text-4xl bold mt-4 ml-40" style={{ color: "#5fedff" }}>0.1%</div>
-          <div className="text-4xl bold mt-4 ml-40" style={{ color: "#5fedff" }}>0.96%</div>
-          <div className="text-6xl ml-40" style={{ color: "white" }}>₹26,56,110</div>
-          <div className="text-4xl mt-4 ml-40" style={{ color: "#5fedff" }}>2.73%</div>
-          <div className="text-4xl mt-4 ml-40" style={{ color: "#5fedff" }}>7.51%</div>
+        <div className="flex text-center w-full h-30">
+          <div className="text-4xl bold mt-4 w-72" style={{ color: "#5fedff" }}>0.1%</div>
+          <div className="text-4xl bold mt-4 w-72" style={{ color: "#5fedff" }}>0.96%</div>
+          <div className="text-6xl w-72" style={{ color: "white" }}>₹26,56,110</div>
+          <div className="text-4xl mt-4 w-72" style={{ color: "#5fedff" }}>2.73%</div>
+          <div className="text-4xl mt-4 w-72" style={{ color: "#5fedff" }}>7.51%</div>
         </div>
         <div className="flex mt-8 justify-center text-xl text-gray-300">Average BTC/INR net price including Commissions</div>
 
         <div className="text-center mt-20 flex w-full">
-          <div className="text-2xl mt-4 w-56" style={{ color: "white" }}>#</div>
-          <div className="text-2xl mt-4 w-56" style={{ color: "white" }}>Platform</div>
-          <div className="text-2xl mt-4 w-56" style={{ color: "white" }}>name</div>
-          <div className="text-2xl mt-4 w-56" style={{ color: "white" }}>last</div>
-          <div className="text-2xl mt-4 w-56" style={{ color: "white" }}>buy/sell Price</div>
-          <div className="text-2xl mt-4 w-56" style={{ color: "white" }}>volume</div>
-          <div className="text-2xl mt-4 w-56" style={{ color: "white" }}>base_unit</div>
+          <div className="text-2xl mt-4 w-72" style={{ color: "white" }}>#</div>
+          <div className="text-2xl mt-4 w-72" style={{ color: "white" }}>Platform</div>
+          <div className="text-2xl mt-4 w-72" style={{ color: "white" }}>name</div>
+          <div className="text-2xl mt-4 w-80" style={{ color: "white" }}>last</div>
+          <div className="text-2xl mt-4 w-72" style={{ color: "white" }}>buy/sell Price</div>
+          <div className="text-2xl mt-4 w-72" style={{ color: "white" }}>volume</div>
+          <div className="text-2xl mt-4 w-72" style={{ color: "white" }}>base_unit</div>
         </div>
 
         {data.length > 0 ? data.map((items, index) => (
           <div key={index} className="text-center mt-5 rounded-3xl flex w-full" style={{ backgroundColor: "rgb(49 54 65)" }}>
-            <div className="w-56 text-2xl bold mt-4 " style={{ color: "white" }}>{index + 1}</div>
-            <div className="w-56 text-2xl mt-4 " style={{ color: "white" }}>WazirX</div>
-            <div className="w-56 text-2xl mt-4 " style={{ color: "white" }}>{items.name}</div>
-            <div className="w-56 text-2xl mt-4 " style={{ color: "white" }}>₹{items.last }</div>
-            <div className="w-56 text-2xl mt-4 " style={{ color: "white" }}>₹{items.buy } / ₹{items.sell}</div>
-            <div className="w-56 text-2xl mt-4 " style={{ color: "white" }}>{items.Volume}</div>
-            <div className="w-56 text-2xl mt-4 " style={{ color: "white" }}>{items.base_unit}</div>
+            <div className="w-72 text-2xl bold mt-4 " style={{ color: "white" }}>{index + 1}</div>
+            <div className="w-72 text-2xl mt-4 " style={{ color: "white" }}>WazirX</div>
+            <div className="w-72 text-2xl mt-4 " style={{ color: "white" }}>{items.name}</div>
+            <div className="w-72 text-2xl mt-4 " style={{ color: "white" }}>₹{items.last }</div>
+            <div className="w-72 text-2xl mt-4 " style={{ color: "white" }}>₹{items.buy } / ₹{items.sell}</div>
+            <div className="w-72 text-2xl mt-4 " style={{ color: "white" }}>{items.Volume}</div>
+            <div className="w-72 text-2xl mt-4 " style={{ color: "white" }}>{items.base_unit}</div>
           </div>
         )) : (
           <div className="text-center text-gray-300 mt-5">No data available</div>
